@@ -33,7 +33,11 @@ public class Driver {
                 System.out.println("b: " + b);
                 System.out.println("c: " + c);
                 game.checkJackpot();
-                coins--;
+                if(a==b && b==c){
+                    coins = coins+5;
+                }
+                else{
+                coins--;}
 
             } else {
                 System.out.println("Λάθος είσοδος. Παρακαλώ πληκτρολογήστε ξανά.");
